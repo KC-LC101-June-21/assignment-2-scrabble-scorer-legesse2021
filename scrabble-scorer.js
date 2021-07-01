@@ -25,7 +25,7 @@ function transform(oldPointStructure){
  
  function oldScrabbleScorer(word) {
   word = word.toUpperCase();
-  let letterPoints = " ";
+  let letterPoints = "";
   for (let i = 0; i < word.length; i++) {
     for (const pointValue in oldPointStructure) {
      if (oldPointStructure[pointValue].includes(word[i])) {
